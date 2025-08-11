@@ -22,6 +22,7 @@ Microsoft SQL Server 2019
 9. Iniciar BookRadarFrontEnd
 
 ================================================================================================================================
+
 Decisiones de diseño:
 Arquitectura:
 Se decidio dividir el requerimiento en dos partes las cuales facilitan organizacion, mantenimiento y escalabilidad, ajustado a los principios SOLID
@@ -29,8 +30,6 @@ Se decidio dividir el requerimiento en dos partes las cuales facilitan organizac
 	* Controller --> Interfaz --> Servicio --> Interfaz --> Repositorio --> Acceso a datos
 2. BookRadarFrontEnd
 	* Views --> Controller --> Interfaz --> Servicio --> Interfaz --> Peticiones a BookRadarBackEnd
-
-
 
 Diseño
 Manejo de framework Bootstrap  se uso por:
