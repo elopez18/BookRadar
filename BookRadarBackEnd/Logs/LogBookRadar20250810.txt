@@ -1,0 +1,285 @@
+2025-08-10 12:52:40.861 -05:00 [INF] Iniciando la aplicación
+2025-08-10 12:52:40.926 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 12:52:41.333 -05:00 [FTL] La aplicación se detuvo debido a una excepción grave Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'System.Net.Http.IHttpClientFactory' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'System.Net.Http.IHttpClientFactory' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.)
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'System.Net.Http.IHttpClientFactory' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'System.Net.Http.IHttpClientFactory' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'System.Net.Http.IHttpClientFactory' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'System.Net.Http.IHttpClientFactory' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Program.cs:line 107
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'System.Net.Http.IHttpClientFactory' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'System.Net.Http.IHttpClientFactory' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2025-08-10 12:55:29.821 -05:00 [INF] Iniciando la aplicación
+2025-08-10 12:55:30.014 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 12:55:31.517 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 12:56:20.007 -05:00 [INF] Iniciando la aplicación
+2025-08-10 12:56:20.078 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 12:56:20.730 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 13:32:08.378 -05:00 [INF] Iniciando la aplicación
+2025-08-10 13:32:08.446 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 13:32:09.110 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 13:38:25.693 -05:00 [INF] Iniciando la aplicación
+2025-08-10 13:38:25.772 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 13:38:26.915 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 15:26:20.789 -05:00 [INF] Iniciando la aplicación
+2025-08-10 15:26:20.873 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 15:26:21.530 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 15:27:21.005 -05:00 [INF] Iniciando la aplicación
+2025-08-10 15:27:21.084 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 15:27:21.745 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 15:34:21.938 -05:00 [INF] Iniciando la aplicación
+2025-08-10 15:34:22.017 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 15:34:22.730 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 15:35:50.426 -05:00 [INF] Iniciando la aplicación
+2025-08-10 15:35:50.530 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 15:35:51.510 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 15:58:28.115 -05:00 [INF] Iniciando la aplicación
+2025-08-10 15:58:28.179 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 15:58:29.006 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 15:59:21.038 -05:00 [INF] Iniciando la aplicación
+2025-08-10 15:59:21.089 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 15:59:21.683 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 16:16:20.285 -05:00 [INF] Iniciando la aplicación
+2025-08-10 16:16:20.373 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 16:16:20.812 -05:00 [FTL] La aplicación se detuvo debido a una excepción grave Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.)
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Program.cs:line 112
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #2) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #3) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2025-08-10 16:17:47.623 -05:00 [INF] Iniciando la aplicación
+2025-08-10 16:17:47.667 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 16:17:47.989 -05:00 [FTL] La aplicación se detuvo debido a una excepción grave Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.)
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Program.cs:line 112
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #2) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+ ---> (Inner Exception #3) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2025-08-10 16:18:47.195 -05:00 [INF] Iniciando la aplicación
+2025-08-10 16:18:47.281 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 16:18:47.899 -05:00 [FTL] La aplicación se detuvo debido a una excepción grave Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.)
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.) (Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Services.IBooksServices Lifetime: Scoped ImplementationType: BookRadarBackEnd.Services.BooksServices': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.Main(String[] args) in D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Program.cs:line 110
+ ---> (Inner Exception #1) System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: BookRadarBackEnd.Repositories.IBooksRepositories Lifetime: Scoped ImplementationType: BookRadarBackEnd.Repositories.BooksRepositories': Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'BookRadarBackEnd.Context.BooksRadarContext' while attempting to activate 'BookRadarBackEnd.Repositories.BooksRepositories'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)<---
+
+2025-08-10 16:21:59.390 -05:00 [INF] Iniciando la aplicación
+2025-08-10 16:21:59.446 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 16:21:59.489 -05:00 [FTL] La aplicación se detuvo debido a una excepción grave 'AddDbContext' was called with configuration, but the context type 'BooksRadarContext' only declares a parameterless constructor. This means that the configuration passed to 'AddDbContext' will never be used. If configuration is passed to 'AddDbContext', then 'BooksRadarContext' should declare a constructor that accepts a DbContextOptions<BooksRadarContext> and must pass it to the base constructor for DbContext.
+System.ArgumentException: 'AddDbContext' was called with configuration, but the context type 'BooksRadarContext' only declares a parameterless constructor. This means that the configuration passed to 'AddDbContext' will never be used. If configuration is passed to 'AddDbContext', then 'BooksRadarContext' should declare a constructor that accepts a DbContextOptions<BooksRadarContext> and must pass it to the base constructor for DbContext.
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.CheckContextConstructors[TContext]()
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddDbContext[TContextService,TContextImplementation](IServiceCollection serviceCollection, Action`2 optionsAction, ServiceLifetime contextLifetime, ServiceLifetime optionsLifetime)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddDbContext[TContextService,TContextImplementation](IServiceCollection serviceCollection, Action`1 optionsAction, ServiceLifetime contextLifetime, ServiceLifetime optionsLifetime)
+   at Microsoft.Extensions.DependencyInjection.EntityFrameworkServiceCollectionExtensions.AddDbContext[TContext](IServiceCollection serviceCollection, Action`1 optionsAction, ServiceLifetime contextLifetime, ServiceLifetime optionsLifetime)
+   at Program.Main(String[] args) in D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Program.cs:line 45
+2025-08-10 16:22:43.787 -05:00 [INF] Iniciando la aplicación
+2025-08-10 16:22:43.867 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 16:22:44.755 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 16:24:46.563 -05:00 [INF] Iniciando la aplicación
+2025-08-10 16:24:46.610 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 16:24:47.662 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 16:28:04.390 -05:00 [INF] Iniciando la aplicación
+2025-08-10 16:28:04.476 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 16:28:05.143 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 16:30:39.416 -05:00 [INF] Iniciando la aplicación
+2025-08-10 16:30:39.478 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 16:30:40.246 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 16:32:13.610 -05:00 [INF] Iniciando la aplicación
+2025-08-10 16:32:13.654 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 16:32:14.258 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 16:43:31.067 -05:00 [INF] Iniciando la aplicación
+2025-08-10 16:43:31.136 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 16:43:31.902 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 16:45:31.494 -05:00 [INF] Iniciando la aplicación
+2025-08-10 16:45:31.579 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 16:45:32.362 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 16:50:33.608 -05:00 [INF] Iniciando la aplicación
+2025-08-10 16:50:33.656 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 16:50:34.441 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 17:05:35.415 -05:00 [INF] Iniciando la aplicación
+2025-08-10 17:05:35.486 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 17:05:36.384 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 17:10:31.598 -05:00 [INF] Iniciando la aplicación
+2025-08-10 17:10:31.664 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 17:10:32.322 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 17:16:32.175 -05:00 [INF] Iniciando la aplicación
+2025-08-10 17:16:32.218 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 17:16:33.288 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 17:23:48.644 -05:00 [INF] Iniciando la aplicación
+2025-08-10 17:23:48.685 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 17:23:49.262 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 17:25:59.504 -05:00 [INF] Iniciando la aplicación
+2025-08-10 17:25:59.550 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 17:26:00.303 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-10 18:14:00.653 -05:00 [INF] Iniciando la aplicación
+2025-08-10 18:14:00.764 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-10 18:14:02.334 -05:00 [INF] Aplicación iniciada correctamente

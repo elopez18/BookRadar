@@ -1,0 +1,48 @@
+2025-08-11 07:50:22.827 -05:00 [INF] Iniciando la aplicación
+2025-08-11 07:50:22.923 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 07:50:25.471 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 07:55:52.537 -05:00 [INF] Iniciando la aplicación
+2025-08-11 07:55:52.612 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 07:55:53.223 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 08:06:32.816 -05:00 [INF] Iniciando la aplicación
+2025-08-11 08:06:32.875 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 08:06:33.565 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 08:10:09.720 -05:00 [INF] Iniciando la aplicación
+2025-08-11 08:10:09.794 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 08:10:10.392 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 09:25:57.385 -05:00 [INF] Iniciando la aplicación
+2025-08-11 09:25:57.431 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 09:25:58.038 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 09:27:07.917 -05:00 [INF] Iniciando la aplicación
+2025-08-11 09:27:07.996 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 09:27:08.584 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 09:30:48.305 -05:00 [INF] Iniciando la aplicación
+2025-08-11 09:30:48.356 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 09:30:48.961 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 09:38:37.701 -05:00 [INF] Iniciando la aplicación
+2025-08-11 09:38:37.761 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 09:38:38.464 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 09:42:43.826 -05:00 [INF] Iniciando la aplicación
+2025-08-11 09:42:43.869 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 09:42:44.486 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 09:47:21.619 -05:00 [INF] Iniciando la aplicación
+2025-08-11 09:47:21.667 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 09:47:22.238 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 10:08:55.087 -05:00 [INF] Iniciando la aplicación
+2025-08-11 10:08:55.139 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 10:08:55.882 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 10:09:35.166 -05:00 [INF] Iniciando la aplicación
+2025-08-11 10:09:35.216 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 10:09:35.914 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 10:10:16.753 -05:00 [INF] Iniciando la aplicación
+2025-08-11 10:10:16.803 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 10:10:17.387 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 10:11:27.045 -05:00 [INF] Iniciando la aplicación
+2025-08-11 10:11:27.119 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 10:11:27.797 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 11:28:25.445 -05:00 [INF] Iniciando la aplicación
+2025-08-11 11:28:25.583 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 11:28:26.713 -05:00 [INF] Aplicación iniciada correctamente
+2025-08-11 15:11:28.238 -05:00 [INF] Iniciando la aplicación
+2025-08-11 15:11:28.278 -05:00 [INF] Serilog ha sido configurado correctamente. LogPath: D:\Proyectos\Prueba Tecnica\BookRadarBackEnd\Logs\LogBookRadar.txt
+2025-08-11 15:11:29.547 -05:00 [INF] Aplicación iniciada correctamente

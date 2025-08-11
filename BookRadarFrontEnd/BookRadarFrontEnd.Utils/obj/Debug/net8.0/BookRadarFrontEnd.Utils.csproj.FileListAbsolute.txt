@@ -1,0 +1,37 @@
+D:\Local_source\BookRadarFrontEnd\BookRadarFrontEnd.Utils\bin\Debug\net8.0\BookRadarFrontEnd.Utils.deps.json
+D:\Local_source\BookRadarFrontEnd\BookRadarFrontEnd.Utils\bin\Debug\net8.0\BookRadarFrontEnd.Utils.dll
+D:\Local_source\BookRadarFrontEnd\BookRadarFrontEnd.Utils\bin\Debug\net8.0\BookRadarFrontEnd.Utils.pdb
+D:\Local_source\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.csproj.AssemblyReference.cache
+D:\Local_source\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.GeneratedMSBuildEditorConfig.editorconfig
+D:\Local_source\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.AssemblyInfoInputs.cache
+D:\Local_source\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.AssemblyInfo.cs
+D:\Local_source\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.csproj.CoreCompileInputs.cache
+D:\Local_source\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.dll
+D:\Local_source\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\refint\BookRadarFrontEnd.Utils.dll
+D:\Local_source\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.pdb
+D:\Local_source\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\ref\BookRadarFrontEnd.Utils.dll
+D:\Proyectos\Prueba Tecnica\BookRadarFrontEnd\BookRadarFrontEnd.Utils\bin\Debug\net8.0\BookRadarFrontEnd.Utils.deps.json
+D:\Proyectos\Prueba Tecnica\BookRadarFrontEnd\BookRadarFrontEnd.Utils\bin\Debug\net8.0\BookRadarFrontEnd.Utils.dll
+D:\Proyectos\Prueba Tecnica\BookRadarFrontEnd\BookRadarFrontEnd.Utils\bin\Debug\net8.0\BookRadarFrontEnd.Utils.pdb
+D:\Proyectos\Prueba Tecnica\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.csproj.AssemblyReference.cache
+D:\Proyectos\Prueba Tecnica\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos\Prueba Tecnica\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.AssemblyInfoInputs.cache
+D:\Proyectos\Prueba Tecnica\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.AssemblyInfo.cs
+D:\Proyectos\Prueba Tecnica\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.csproj.CoreCompileInputs.cache
+D:\Proyectos\Prueba Tecnica\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.dll
+D:\Proyectos\Prueba Tecnica\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\refint\BookRadarFrontEnd.Utils.dll
+D:\Proyectos\Prueba Tecnica\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.pdb
+D:\Proyectos\Prueba Tecnica\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\ref\BookRadarFrontEnd.Utils.dll
+D:\Proyectos\Prueba Tecnica\BookRadar\BookRadarFrontEnd\BookRadarFrontEnd.Utils\bin\Debug\net8.0\BookRadarFrontEnd.Utils.deps.json
+D:\Proyectos\Prueba Tecnica\BookRadar\BookRadarFrontEnd\BookRadarFrontEnd.Utils\bin\Debug\net8.0\BookRadarFrontEnd.Utils.dll
+D:\Proyectos\Prueba Tecnica\BookRadar\BookRadarFrontEnd\BookRadarFrontEnd.Utils\bin\Debug\net8.0\BookRadarFrontEnd.Utils.pdb
+D:\Proyectos\Prueba Tecnica\BookRadar\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.csproj.AssemblyReference.cache
+D:\Proyectos\Prueba Tecnica\BookRadar\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyectos\Prueba Tecnica\BookRadar\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.AssemblyInfoInputs.cache
+D:\Proyectos\Prueba Tecnica\BookRadar\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.AssemblyInfo.cs
+D:\Proyectos\Prueba Tecnica\BookRadar\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.csproj.CoreCompileInputs.cache
+D:\Proyectos\Prueba Tecnica\BookRadar\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.sourcelink.json
+D:\Proyectos\Prueba Tecnica\BookRadar\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.dll
+D:\Proyectos\Prueba Tecnica\BookRadar\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\refint\BookRadarFrontEnd.Utils.dll
+D:\Proyectos\Prueba Tecnica\BookRadar\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\BookRadarFrontEnd.Utils.pdb
+D:\Proyectos\Prueba Tecnica\BookRadar\BookRadarFrontEnd\BookRadarFrontEnd.Utils\obj\Debug\net8.0\ref\BookRadarFrontEnd.Utils.dll

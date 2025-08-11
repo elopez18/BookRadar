@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "PWh9yIitpUM=",
+  "success": true,
+  "projectFilePath": "D:\\Proyectos\\Prueba Tecnica\\BookRadar\\BookRadarFrontEnd\\BookRadarFrontEnd.Utils\\BookRadarFrontEnd.Utils.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\edwin\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.8\\microsoft.extensions.configuration.9.0.8.nupkg.sha512",
+    "C:\\Users\\edwin\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.8\\microsoft.extensions.configuration.abstractions.9.0.8.nupkg.sha512",
+    "C:\\Users\\edwin\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.8\\microsoft.extensions.primitives.9.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
